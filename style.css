@@ -1,0 +1,102 @@
+.grid-container{
+  background-color: black;
+  height: 100vh;
+  max-width: 100%;
+}
+
+#menu-container{
+  background-color: black;
+  height: 100vh;
+}
+ #my-name {
+   font-size: 6em ;
+   color: white;
+   text-align: center;
+   width: 100%;
+   font-family: 'Barlow Condensed', sans-serif;
+  padding-right: 150px;
+ }
+
+
+#background {
+  background-color: white;
+  height: 100vh;
+  background-image: url("IMG_9234color.jpg");
+  /*background-size: auto 100%;*/
+  /*background-repeat:   no-repeat;*/
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body.grid-container{
+  max-width: 100%;
+}
+
+/* menu font style*/
+ul#menu {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 200px;
+    width: 100%;
+    /*position: fixed;*/
+}
+
+/* portfolio, cv and contact item  background style*/
+ul#menu li {
+    background-color: #000000;
+    border-left: 5px solid #FFFFFF;
+    display: block;
+    width: 300px;
+    height: 75px;
+    margin: 2px 0;
+    }
+
+/* portfolio ,cv and contact item font style*/
+ul#menu li a {
+    color: white;
+    display: block;
+    line-height: 30px;
+    padding-left: 15px;
+    text-decoration: none;
+    width: 200px; /* 150px - 15px (padding) */
+    height: 45px;
+  }
+
+
+
+/* Background color home page*/
+ul#menu li.active a{
+              color: #000000;
+              background-color: #FFFFFF;
+                  }
+
+                  /* Background color home page*/
+                  ul#menu li.active {
+
+                                background-color: #FFFFFF;
+                              border-left: 5px solid #000000;
+                                    }
+
+/* Background color when we are hoverig on it with the mouse*/
+ul#menu li:hover {
+            background-color: #FFFFFF;
+            border-left: 5px solid #000000;
+          }
+/* font color when we are hoverig on it with the mouse*/
+ul#menu li a:hover {
+        color: #000000;
+        }
+
+
+
+html, main, body{
+  margin: 0;
+  padding: 0;
+
+}

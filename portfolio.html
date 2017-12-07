@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfoliostyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300" rel="stylesheet">
+</head>
+<!-- html showing the user my photographic portfolio (with Photos).
+ On the top part there is a nav bar with all the links to all the
+pages. The nav bar is resposive so when the screen is smaller it
+will appear a little icon on the top right corner with a watherfall
+menu.under the topnav ther is the header part with titles and 3 button
+which are able to change the photo grid layout-->
+
+<body>
+  <!-- top menu based on w3 school  with access key -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" accesskey="1">Home Page</a>
+    <a href="portfolio.html" accesskey="2" class="active">Portfolio</a>
+    <a href="cv.html" accesskey="3">Curriculum Vitae</a>
+    <a href="contactme.html" accesskey="4">Contact</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <!-- Header -->
+  <div class="header">
+    <h1>PORTFOLIO</h1>
+    <h2>These are some of my shoots. My Camera is the Canon 100d and my lenses are: Pentax 50mm F1.7, Canon EF 40mm f/2.8 STM and EF-S 18-55mm f/3.5-5.6 IS STM.</h2>
+    <h3>Click on the buttons to change the grid view.</h3>
+    <!-- button grid layout based on W3school -->
+    <button onclick="three()">3</button>
+    <button onclick="two()">2</button>
+    <button onclick="one()">1</button>
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="row">
+    <div class="column">
+      <img src="portfolio/IMG_3986.jpg" alt="girl portrait">
+
+      <img src="portfolio/IMG_9601.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_9606.jpg" alt="girl portrait">
+      <img src="portfolio/1.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_1318.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_1340.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_9901.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_1993.jpg" alt="smoke picture">
+
+    </div>
+    <div class="column">
+      <img src="portfolio/IMG_4110.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_3742.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_2441.jpg" alt="boy portrait">
+      <img src="portfolio/IMG_1560.jpg" alt="boy portrait">
+      <img src="portfolio/IMG_1580.jpg" alt="boy portrait">
+      <img src="portfolio/IMG_3558.jpg" alt="girl portrait">
+      <img src="portfolio/IMG_2000.jpg" alt="smoke picture">
+    </div>
+    <div class="column">
+      <img src="portfolio/IMG_4125.jpg" alt="boy portrait">
+      <img src="portfolio/IMG_8753_3.jpg" alt="boy portrait">
+      <img src="portfolio/IMG_3934-1.jpg" alt="girl portrait">
+
+      <img src="portfolio/IMG_9742.jpg" alt="smoke picture">
+      <img src="portfolio/IMG_2004.jpg" alt="smoke picture">
+
+
+    </div>
+  </div>
+
+</body>
+<script>
+  // al this script are taken from W3school
+  // Four images side by side
+  function three() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "33%";
+    }
+  }
+
+  // Two images side by side
+  function two() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "50%";
+    }
+  }
+
+  // Full-width images
+  function one() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+      elements[i].style.width = "100%";
+    }
+  }
+
+  // menu script from W3school. basically this script change the class name of
+  // the topnav from "topnav" to "responsive" for letting me using a different css class
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</html>

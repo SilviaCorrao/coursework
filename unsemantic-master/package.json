@@ -1,0 +1,31 @@
+{
+  "name": "unsemantic",
+  "version": "1.2.0",
+  "description": "Fluid grid for mobile, tablet, and desktop.",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathansmith/unsemantic.git"
+  },
+  "keywords": [
+    "css",
+    "fluid",
+    "layout",
+    "desktop",
+    "tablet",
+    "mobile",
+    "sass"
+  ],
+  "author": "Nathan Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathansmith/unsemantic/issues"
+  },
+  "homepage": "https://github.com/nathansmith/unsemantic#readme"
+}
